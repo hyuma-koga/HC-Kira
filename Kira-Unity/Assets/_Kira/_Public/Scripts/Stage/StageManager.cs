@@ -5,14 +5,24 @@ public class StageManager : MonoBehaviour
     [SerializeField] private GameObject[]     stagePrefabs;
     [SerializeField] private GameOverManager  gameOverManager;
     [SerializeField] private GameClearManager gameClearManager;
+    [SerializeField] private GameUI           gameUI;
+    [SerializeField] private GameObject stageSelectUI;
     [SerializeField] private Transform        stageParent;
     [SerializeField] private int              currentStageIndex = 0;
 
     private GameObject currentStageInstance;
+    public static StageManager Instance { get; private set; }
 
-    private void Start()
+    private void Awake()
     {
-        SpawnStage(currentStageIndex);
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            }
     }
 
     public void RestartStage()
@@ -24,7 +34,12 @@ public class StageManager : MonoBehaviour
 
         if (BalloonCounter.Instance != null)
         {
-            BalloonCounter.Instance.ResetCounter(); // Å©í«â¡
+            BalloonCounter.Instance.ResetCounter();
+        }
+
+        if (gameUI != null)
+        {
+            gameUI.gameObject.SetActive(true);
         }
 
         SpawnStage(currentStageIndex);
@@ -44,7 +59,21 @@ public class StageManager : MonoBehaviour
 
         currentStageInstance = Instantiate(stagePrefabs[index], stageParent);
 
+        RegisterBallForUI(currentStageInstance);
         RegisterBalloonsInStage(currentStageInstance);
+    }
+
+    private void RegisterBallForUI(GameObject stageInstance)
+    {
+        var ballObj = stageInstance.transform.Find("Ball");
+        if (ballObj != null && gameUI != null)
+        {
+            var rb = ballObj.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                gameUI.SetBall(rb);
+            }
+        }
     }
 
     private void RegisterBalloonsInStage(GameObject stageInstance)
@@ -59,6 +88,33 @@ public class StageManager : MonoBehaviour
         {
             Debug.LogWarning("BalloonÇÃêeTranformÇ™å©Ç¬Ç©ÇÁÇ»Ç¢");
         }
+    }
+
+    public void LoadStage(int index)
+    {
+        currentStageIndex = index;
+
+        if (currentStageInstance != null)
+        {
+            Destroy(currentStageInstance);
+        }
+
+        if (BalloonCounter.Instance != null)
+        {
+            BalloonCounter.Instance.ResetCounter();
+        }
+
+
+        if (gameUI != null)
+        {
+            gameUI.gameObject.SetActive(true);
+        }
+
+        gameOverManager?.ResetGameOver();
+        gameClearManager?.ResetGameClear();
+        currentStageInstance = Instantiate(stagePrefabs[index], stageParent);
+        RegisterBalloonsInStage(currentStageInstance);
+        RegisterBallForUI(currentStageInstance);
     }
 
     public void LoadNextStage()
@@ -82,6 +138,26 @@ public class StageManager : MonoBehaviour
         }
 
         RestartStage();
+    }
+
+    public void ReturnToStageSelect()
+    {
+        if (currentStageInstance != null)
+        {
+            Destroy(currentStageInstance);
+        }
+
+        if (gameOverManager != null)
+        {
+            gameOverManager.ResetGameOver();
+        }
+
+        if (gameUI != null)
+        {
+            gameUI.gameObject.SetActive(false);
+        }
+
+        stageSelectUI.SetActive(true);
     }
 
 }
