@@ -4,6 +4,12 @@ using UnityEngine;
 public class BalloonView : MonoBehaviour
 {
     [SerializeField] private BalloonVisualStrategySO visualStrategy;
+    [SerializeField] private int spriteIndex;
+
+    public BalloonVisualStrategySO VisualStrategy => visualStrategy;
+
+    // 修正：正しくフィールドを返すようにする
+    public int SpriteIndex => spriteIndex;
 
     private void Start()
     {
@@ -27,18 +33,21 @@ public class BalloonView : MonoBehaviour
         ApplyPhysicsShapeToAllPolygonColliders(sr.sprite);
 
         var destroyer = GetComponent<BalloonDestroyer>();
-
         if (destroyer != null)
         {
             destroyer.Initialize();
         }
     }
 
+    public void SetSpriteIndex(int index)
+    {
+        spriteIndex = index;
+    }
+
     private void ApplyPhysicsShapeToAllPolygonColliders(Sprite sprite)
     {
         if (sprite == null) return;
 
-        // 自身＋子オブジェクトすべての PolygonCollider2D を対象にする
         PolygonCollider2D[] colliders = GetComponentsInChildren<PolygonCollider2D>();
 
         foreach (var collider in colliders)

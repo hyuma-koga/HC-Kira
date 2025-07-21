@@ -21,4 +21,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8b3f51dcba4f5c7469e394d3d7949a0f, type: 3}
   - {fileID: 21300000, guid: d6c2be2b0faab654f8ed1757419391ce, type: 3}
   - {fileID: 21300000, guid: 632905be2b4cd4248a2f03b47f4c9180, type: 3}
+  splashSprites:
+  - {fileID: 21300000, guid: 502f64e56b8f452419a67495afcffba5, type: 3}
+  - {fileID: 21300000, guid: ff0f7b9091139be4983496c77096f994, type: 3}
+  - {fileID: 21300000, guid: 2f042246f07b9f841b94343f959e8f69, type: 3}
+  - {fileID: 21300000, guid: 745f097ecea43b94aa0aa9a0260e959b, type: 3}
+  - {fileID: 21300000, guid: 0d92a4201b707e848acfba1ceef0c765, type: 3}
+  - {fileID: 21300000, guid: 54d4a05d0f557fc41b44d5b78453a282, type: 3}
+  - {fileID: 21300000, guid: cefda8a464a8ad04d84f62bba155705a, type: 3}
   scale: 0.2

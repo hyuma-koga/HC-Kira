@@ -27,7 +27,7 @@ public class BalloonCounter : MonoBehaviour
     public void UnregisterBalloon()
     {
         balloonCount--;
-        Debug.Log($"Balloon íœBc‚è: {balloonCount}");
+
         if (balloonCount <= 0)
         {
             gameClearManager.TriggerGameClear();

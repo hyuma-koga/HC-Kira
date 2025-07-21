@@ -66,6 +66,7 @@ public class StageManager : MonoBehaviour
     private void RegisterBallForUI(GameObject stageInstance)
     {
         var ballObj = stageInstance.transform.Find("Ball");
+
         if (ballObj != null && gameUI != null)
         {
             var rb = ballObj.GetComponent<Rigidbody2D>();
@@ -83,10 +84,6 @@ public class StageManager : MonoBehaviour
         if (balloonRoot != null && BalloonCounter.Instance != null)
         {
             BalloonCounter.Instance.RegisterBalloon(balloonRoot);
-        }
-        else
-        {
-            Debug.LogWarning("Balloonの親Tranformが見つからない");
         }
     }
 
@@ -123,7 +120,6 @@ public class StageManager : MonoBehaviour
 
         if (currentStageIndex >= stagePrefabs.Length)
         {
-            Debug.Log("すべてのステージをクリアしました！");
             return;
         }
 
@@ -134,7 +130,7 @@ public class StageManager : MonoBehaviour
 
         if (BalloonCounter.Instance != null)
         {
-            BalloonCounter.Instance.ResetCounter(); // ←追加
+            BalloonCounter.Instance.ResetCounter();
         }
 
         RestartStage();

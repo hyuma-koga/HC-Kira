@@ -22,6 +22,8 @@ public class GameClearUI : MonoBehaviour
 
     public void NextStageButton()
     {
+        StartCoroutine(BalloonSplashEffect.ClearAllSplashesCoroutine());
+
         if (stageManager != null)
         {
             stageManager.LoadNextStage();

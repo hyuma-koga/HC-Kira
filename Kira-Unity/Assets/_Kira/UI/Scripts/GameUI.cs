@@ -40,6 +40,8 @@ public class GameUI : MonoBehaviour
 
     public void OnSelectStageButtonPressed()
     {
+        StartCoroutine(BalloonSplashEffect.ClearAllSplashesCoroutine());
+
         if (StageManager.Instance != null)
         {
             StageManager.Instance.ReturnToStageSelect();
@@ -48,6 +50,8 @@ public class GameUI : MonoBehaviour
 
     public void OnRestartButtonPressed()
     {
+        StartCoroutine(BalloonSplashEffect.ClearAllSplashesCoroutine());
+
         if (StageManager.Instance != null)
         {
             StageManager.Instance.RestartStage();

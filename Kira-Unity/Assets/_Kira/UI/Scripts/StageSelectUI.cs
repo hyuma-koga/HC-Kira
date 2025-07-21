@@ -13,6 +13,7 @@ public class StageSelectUI : MonoBehaviour
         stageSelectUI.SetActive(false);
         titleUI.SetActive(false);
         gameUI.SetActive(true);
+        StartCoroutine(BalloonSplashEffect.ClearAllSplashesCoroutine());
     }
 
     public void OnBackButtonPressed()

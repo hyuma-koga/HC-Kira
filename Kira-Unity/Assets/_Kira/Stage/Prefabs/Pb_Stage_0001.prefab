@@ -281,6 +281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballTag: Ball
+  splashPrefab: {fileID: 5328594785771251966, guid: 4450de298b8917947941cfe82cd0343f, type: 3}
 --- !u!1 &950760177278134555
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,6 +563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballTag: Ball
+  splashPrefab: {fileID: 5328594785771251966, guid: 4450de298b8917947941cfe82cd0343f, type: 3}
 --- !u!1 &1299857534426789077
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballTag: Ball
+  splashPrefab: {fileID: 5328594785771251966, guid: 4450de298b8917947941cfe82cd0343f, type: 3}
 --- !u!1 &1514513835757135454
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,6 +959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballTag: Ball
+  splashPrefab: {fileID: 5328594785771251966, guid: 4450de298b8917947941cfe82cd0343f, type: 3}
 --- !u!1 &1521607397768928623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1455,6 +1459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballTag: Ball
+  splashPrefab: {fileID: 5328594785771251966, guid: 4450de298b8917947941cfe82cd0343f, type: 3}
 --- !u!1 &2775380511715207879
 GameObject:
   m_ObjectHideFlags: 0
@@ -1770,6 +1775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballTag: Ball
+  splashPrefab: {fileID: 5328594785771251966, guid: 4450de298b8917947941cfe82cd0343f, type: 3}
 --- !u!1 &2972697593267919439
 GameObject:
   m_ObjectHideFlags: 0
@@ -1967,6 +1973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballTag: Ball
+  splashPrefab: {fileID: 5328594785771251966, guid: 4450de298b8917947941cfe82cd0343f, type: 3}
 --- !u!1 &3387178434068696189
 GameObject:
   m_ObjectHideFlags: 0
@@ -2296,6 +2303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballTag: Ball
+  splashPrefab: {fileID: 5328594785771251966, guid: 4450de298b8917947941cfe82cd0343f, type: 3}
 --- !u!1 &3575234410190685202
 GameObject:
   m_ObjectHideFlags: 0
@@ -3131,6 +3139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballTag: Ball
+  splashPrefab: {fileID: 5328594785771251966, guid: 4450de298b8917947941cfe82cd0343f, type: 3}
 --- !u!1 &5238882059176906090
 GameObject:
   m_ObjectHideFlags: 0
@@ -3462,6 +3471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballTag: Ball
+  splashPrefab: {fileID: 5328594785771251966, guid: 4450de298b8917947941cfe82cd0343f, type: 3}
 --- !u!1 &6068938488601947397
 GameObject:
   m_ObjectHideFlags: 0
@@ -3659,6 +3669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballTag: Ball
+  splashPrefab: {fileID: 5328594785771251966, guid: 4450de298b8917947941cfe82cd0343f, type: 3}
 --- !u!1 &6080073185775875049
 GameObject:
   m_ObjectHideFlags: 0
@@ -3856,6 +3867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballTag: Ball
+  splashPrefab: {fileID: 5328594785771251966, guid: 4450de298b8917947941cfe82cd0343f, type: 3}
 --- !u!1 &6086281545305148954
 GameObject:
   m_ObjectHideFlags: 0
@@ -4257,6 +4269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballTag: Ball
+  splashPrefab: {fileID: 5328594785771251966, guid: 4450de298b8917947941cfe82cd0343f, type: 3}
 --- !u!1 &6857277415401491334
 GameObject:
   m_ObjectHideFlags: 0
@@ -4454,6 +4467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballTag: Ball
+  splashPrefab: {fileID: 5328594785771251966, guid: 4450de298b8917947941cfe82cd0343f, type: 3}
 --- !u!1 &6946198713098056787
 GameObject:
   m_ObjectHideFlags: 0
@@ -4651,6 +4665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballTag: Ball
+  splashPrefab: {fileID: 5328594785771251966, guid: 4450de298b8917947941cfe82cd0343f, type: 3}
 --- !u!1 &7288586807235325310
 GameObject:
   m_ObjectHideFlags: 0
@@ -5344,6 +5359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballTag: Ball
+  splashPrefab: {fileID: 5328594785771251966, guid: 4450de298b8917947941cfe82cd0343f, type: 3}
 --- !u!1 &8216942735434290926
 GameObject:
   m_ObjectHideFlags: 0
@@ -5893,3 +5909,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballTag: Ball
+  splashPrefab: {fileID: 5328594785771251966, guid: 4450de298b8917947941cfe82cd0343f, type: 3}
