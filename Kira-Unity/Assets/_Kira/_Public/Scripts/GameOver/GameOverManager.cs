@@ -1,22 +1,23 @@
 using UnityEngine;
+using System.Collections;
 
 public class GameOverManager : MonoBehaviour
 {
     [SerializeField] private GameOverUI gameOverUI;
-    [SerializeField] private string     ballTag = "Ball";
-    [SerializeField] private float      bottomY = -10f;
-    [SerializeField] private float      leftX = -10f;
-    [SerializeField] private float      rightX = 10f;
-    
-    private GameObject                  ball;
-    private bool                        isGameOver = false;
+    [SerializeField] private string ballTag = "Ball";
+    [SerializeField] private float bottomY = -10f;
+    [SerializeField] private float leftX = -10f;
+    [SerializeField] private float rightX = 10f;
+    [SerializeField] private GameOverEffectSpawner effectSpawner;
+    [SerializeField] private float delayBeforeUI = 3f;
+
+    private GameObject ball;
+    private bool isGameOver = false;
 
     private void Update()
     {
         if (isGameOver)
-        {
             return;
-        }
 
         if (ball == null)
         {
@@ -28,18 +29,24 @@ public class GameOverManager : MonoBehaviour
 
         if (pos.y < bottomY || pos.x < leftX || pos.x > rightX)
         {
-            TriggerGameOver();
+            StartCoroutine(PlayGameOverSequence());
         }
     }
 
-    private void TriggerGameOver()
+    private IEnumerator PlayGameOverSequence()
     {
         isGameOver = true;
 
-        if (gameOverUI != null)
+        Time.timeScale = 0f;
+
+        if (ball != null && effectSpawner != null)
         {
-            gameOverUI.Show();
+            effectSpawner.SpawnEffect(ball.transform);
         }
+
+        yield return new WaitForSecondsRealtime(delayBeforeUI);
+
+        gameOverUI?.Show();
     }
 
     public void ResetGameOver()

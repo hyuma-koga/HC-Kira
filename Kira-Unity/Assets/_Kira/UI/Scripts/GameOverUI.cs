@@ -7,6 +7,7 @@ public class GameOverUI : MonoBehaviour
     [SerializeField] private GameObject gameOverUI;
     [SerializeField] private Button restartButton;
     [SerializeField] private StageManager stageManager;
+    [SerializeField] private GameOverEffectSpawner effectSpawner;
 
     private void Awake()
     {
@@ -26,14 +27,19 @@ public class GameOverUI : MonoBehaviour
 
     private IEnumerator HandleRestartSequence()
     {
-        // スプラッシュ削除（内部で yield return null ＆ WaitUntil）
+        // ① ゲーム時間を戻す
+        Time.timeScale = 1f;
+
+        // ② ゲームオーバーエフェクトを削除
+        effectSpawner?.ClearEffect();
+
+        // ③ スプラッシュ削除
         yield return BalloonSplashEffect.ClearAllSplashesCoroutine();
 
-        // GameOverUI 非表示
+        // ④ UIを非表示
         gameOverUI.SetActive(false);
 
-        // ステージリスタート
-        stageManager.RestartStage();
+        // ⑤ ステージをリスタート
+        stageManager?.RestartStage();
     }
-
 }

@@ -909,6 +909,7 @@ Transform:
   m_Children:
   - {fileID: 1344602910}
   - {fileID: 340346038}
+  - {fileID: 1961145984}
   - {fileID: 36235615}
   - {fileID: 1786094939}
   - {fileID: 1576688954}
@@ -1134,9 +1135,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 441029089}
   ballTag: Ball
-  bottomY: -6
-  leftX: -10
-  rightX: 10
+  bottomY: -4.9
+  leftX: -8.7
+  rightX: 8.7
+  effectSpawner: {fileID: 1961145983}
+  delayBeforeUI: 3
 --- !u!1 &350996738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1844,6 +1847,7 @@ MonoBehaviour:
   gameOverUI: {fileID: 1766507323}
   restartButton: {fileID: 238453136}
   stageManager: {fileID: 1344602909}
+  effectSpawner: {fileID: 1961145983}
 --- !u!1 &457550526
 GameObject:
   m_ObjectHideFlags: 0
@@ -6106,6 +6110,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1957263793}
   m_CullTransparentMesh: 1
+--- !u!1 &1961145982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1961145984}
+  - component: {fileID: 1961145983}
+  m_Layer: 0
+  m_Name: GameOverEffect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1961145983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961145982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f20a36ccd25ae046a093604f732a76c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectPrefab: {fileID: 1306037457902397055, guid: 5ceb631f49e6d7444bb876da6e2503ac, type: 3}
+  ballTag: Ball
+--- !u!4 &1961145984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961145982}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 250940352}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2058864787
 GameObject:
   m_ObjectHideFlags: 0
