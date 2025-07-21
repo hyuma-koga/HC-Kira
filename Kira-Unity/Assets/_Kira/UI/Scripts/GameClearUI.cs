@@ -3,6 +3,7 @@ using UnityEngine;
 public class GameClearUI : MonoBehaviour
 {
     [SerializeField] private GameObject gameClearUI;
+    [SerializeField] private GameObject gameUI;
     [SerializeField] private StageManager stageManager;
     [SerializeField] private GameClearEffectSpawner effectSpawner; // ← 追加
 
@@ -23,24 +24,17 @@ public class GameClearUI : MonoBehaviour
 
     public void NextStageButton()
     {
-        // ① ゲーム時間を戻す
         Time.timeScale = 1f;
 
-        // ② スプラッシュ削除
+        gameUI.SetActive(true);
+
         StartCoroutine(BalloonSplashEffect.ClearAllSplashesCoroutine());
 
-        // ③ エフェクト削除
         effectSpawner?.ClearEffects();
 
-        // ④ ステージ切り替え
         if (stageManager != null)
         {
             stageManager.LoadNextStage();
         }
-        else
-        {
-            Debug.LogWarning("StageManager が設定されていません");
-        }
     }
-
 }

@@ -402,6 +402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &4541955563064171905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -684,6 +685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &3660694384160067824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -725,8 +727,8 @@ Transform:
   m_GameObject: {fileID: 330522525371062726}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.67559016, w: 0.7372774}
-  m_LocalPosition: {x: -5.553, y: -0.2, z: 0}
-  m_LocalScale: {x: 6, y: 0.4, z: 1}
+  m_LocalPosition: {x: -5.57, y: 0.14, z: 0}
+  m_LocalScale: {x: 6.5, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5962433497018252207}
@@ -1016,6 +1018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 0f25aa68c08336c4e827f20e5d0dd3e6, type: 2}
+  spriteIndex: 0
 --- !u!114 &905155113221679497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1684,6 +1687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 0f25aa68c08336c4e827f20e5d0dd3e6, type: 2}
+  spriteIndex: 0
 --- !u!114 &2303332861547117280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1966,6 +1970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &1481721934003403495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2416,6 +2421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &5314456545393299604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2706,6 +2712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &2595849327544560837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2904,6 +2911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &505687137425914211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2945,8 +2953,8 @@ Transform:
   m_GameObject: {fileID: 1660390477628448468}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.7, y: -0.2, z: 0}
-  m_LocalScale: {x: 6, y: 0.4, z: 1}
+  m_LocalPosition: {x: -0.7, y: 0.04, z: 0}
+  m_LocalScale: {x: 6.3, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5962433497018252207}
@@ -3113,8 +3121,8 @@ Transform:
   m_GameObject: {fileID: 1707443582391494342}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.70090926, w: 0.71325046}
-  m_LocalPosition: {x: 6.35, y: -0.2, z: 0}
-  m_LocalScale: {x: 6, y: 0.4, z: 1}
+  m_LocalPosition: {x: 6.35, y: -0.01, z: 0}
+  m_LocalScale: {x: 6.5, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5962433497018252207}
@@ -3572,6 +3580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &3800677661246675642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4106,6 +4115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 0f25aa68c08336c4e827f20e5d0dd3e6, type: 2}
+  spriteIndex: 0
 --- !u!114 &4299378691238424920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4304,6 +4314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &8399000372434792669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4670,6 +4681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &7902032862804405485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5120,6 +5132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &3053772212076148793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5318,6 +5331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &5864794770673809544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5600,6 +5614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &2737429435657569563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5882,6 +5897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &6785611765059717026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6332,6 +6348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &1357664330305228094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6748,6 +6765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &8907150237051657653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7114,6 +7132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &6822930070088624896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7396,6 +7415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &8802801208523058702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7594,6 +7614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 0f25aa68c08336c4e827f20e5d0dd3e6, type: 2}
+  spriteIndex: 0
 --- !u!114 &7260839354986716193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7792,6 +7813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &6606240695289706827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7990,6 +8012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 0f25aa68c08336c4e827f20e5d0dd3e6, type: 2}
+  spriteIndex: 0
 --- !u!114 &6226773652565009316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8440,6 +8463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 0f25aa68c08336c4e827f20e5d0dd3e6, type: 2}
+  spriteIndex: 0
 --- !u!114 &919445162830083752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8638,6 +8662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &5921496094624944284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9306,6 +9331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &5681220756091285572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9504,6 +9530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &8902796546686823577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9954,6 +9981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 0f25aa68c08336c4e827f20e5d0dd3e6, type: 2}
+  spriteIndex: 0
 --- !u!114 &1418366738977503031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10068,6 +10096,7 @@ GameObject:
   - component: {fileID: 5682291202484641283}
   - component: {fileID: 6004725138428556473}
   - component: {fileID: 7151893532928812971}
+  - component: {fileID: 6834572450525600344}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Ball
@@ -10380,6 +10409,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDragDistance: 2
+--- !u!114 &6834572450525600344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5647597469770105688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a0579616035d54990d0296dab422aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostPrefab: {fileID: 4204490170693586832, guid: cfe0734732ec65c46a16481492e272c7, type: 3}
+  spawnInterval: 0.02
+  velocityThreshold: 0.1
+  ghostLifetime: 0.3
 --- !u!1 &5744526480734042445
 GameObject:
   m_ObjectHideFlags: 0
@@ -10698,6 +10743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &6876686586503960544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11148,6 +11194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &7066796763516254811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11430,6 +11477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &1989695100335680249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11712,6 +11760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &1605260038104948560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11910,6 +11959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &432978520617484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12192,6 +12242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &4317300584382242796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12390,6 +12441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &4231158361496597792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12756,6 +12808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &9029203621637409603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12954,6 +13007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &5214477745769344281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13152,6 +13206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &344617010377209796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13434,6 +13489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &6714495040186170702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13716,6 +13772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &3530231065470506754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13998,6 +14055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &6105416861696445975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14280,6 +14338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &4512158340354548222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14518,6 +14577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &6279948333623685717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14716,6 +14776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &3151229035918875637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14914,6 +14975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &3890591149224274581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15196,6 +15258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &5499076496895598472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15394,6 +15457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &334497126025789879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15676,6 +15740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 0f25aa68c08336c4e827f20e5d0dd3e6, type: 2}
+  spriteIndex: 0
 --- !u!114 &8613107283320492455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15874,6 +15939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &433958016803177503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16072,6 +16138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &5694108327473255373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16270,6 +16337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &3613070723824478457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16686,6 +16754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 0f25aa68c08336c4e827f20e5d0dd3e6, type: 2}
+  spriteIndex: 0
 --- !u!114 &3784323704858762410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16884,6 +16953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &1978867775054740615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17166,6 +17236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &4568411915292643896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17448,6 +17519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &6941985911598325087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17646,6 +17718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &8014594343860763468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17928,6 +18001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &7633020289077060298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18126,6 +18200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &4824000079696065290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18324,6 +18399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &6840327935708632594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18606,6 +18682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: d917d1132332058488c6a11699f76d48, type: 2}
+  spriteIndex: 0
 --- !u!114 &6884089367979540413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18888,6 +18965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualStrategy: {fileID: 11400000, guid: 2c2f1feb0196df24a967806c09831feb, type: 2}
+  spriteIndex: 0
 --- !u!114 &1407165824196484527
 MonoBehaviour:
   m_ObjectHideFlags: 0

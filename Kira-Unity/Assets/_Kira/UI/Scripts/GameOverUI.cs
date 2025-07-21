@@ -5,6 +5,7 @@ using System.Collections;
 public class GameOverUI : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverUI;
+    [SerializeField] private GameObject gameUI;
     [SerializeField] private Button restartButton;
     [SerializeField] private StageManager stageManager;
     [SerializeField] private GameOverEffectSpawner effectSpawner;
@@ -17,6 +18,7 @@ public class GameOverUI : MonoBehaviour
 
     public void Show()
     {
+        gameUI.SetActive(false);
         gameOverUI.SetActive(true);
     }
 
@@ -27,19 +29,15 @@ public class GameOverUI : MonoBehaviour
 
     private IEnumerator HandleRestartSequence()
     {
-        // ① ゲーム時間を戻す
         Time.timeScale = 1f;
 
-        // ② ゲームオーバーエフェクトを削除
         effectSpawner?.ClearEffect();
 
-        // ③ スプラッシュ削除
         yield return BalloonSplashEffect.ClearAllSplashesCoroutine();
 
-        // ④ UIを非表示
         gameOverUI.SetActive(false);
+        gameUI.SetActive(true);
 
-        // ⑤ ステージをリスタート
         stageManager?.RestartStage();
     }
 }

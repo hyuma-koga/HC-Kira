@@ -4,6 +4,7 @@ using System.Collections;
 public class GameOverManager : MonoBehaviour
 {
     [SerializeField] private GameOverUI gameOverUI;
+    [SerializeField] private GameObject gameUI;
     [SerializeField] private string ballTag = "Ball";
     [SerializeField] private float bottomY = -10f;
     [SerializeField] private float leftX = -10f;
@@ -36,6 +37,8 @@ public class GameOverManager : MonoBehaviour
     private IEnumerator PlayGameOverSequence()
     {
         isGameOver = true;
+
+        gameUI.SetActive(false);
 
         Time.timeScale = 0f;
 

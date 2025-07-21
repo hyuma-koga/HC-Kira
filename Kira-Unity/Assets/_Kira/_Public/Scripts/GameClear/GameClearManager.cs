@@ -4,6 +4,7 @@ using System.Collections;
 public class GameClearManager : MonoBehaviour
 {
     [SerializeField] private GameClearUI gameClearUI;
+    [SerializeField] private GameObject  gameUI;
     [SerializeField] private GameClearEffectSpawner effectSpawner;
     [SerializeField] private float delayBeforeUI = 3f;
 
@@ -14,16 +15,13 @@ public class GameClearManager : MonoBehaviour
 
     private IEnumerator PlayClearSequence()
     {
-        // ① ゲーム時間を止める
+        gameUI.SetActive(false);
         Time.timeScale = 0f;
 
-        // ② エフェクトは通常通り再生（TimeScale の影響を受けない）
         effectSpawner.SpawnEffects();
 
-        // ③ 実時間で待機（タイムスケールに影響されない）
         yield return new WaitForSecondsRealtime(delayBeforeUI);
 
-        // ④ UIを表示
         gameClearUI?.Show();
     }
 
