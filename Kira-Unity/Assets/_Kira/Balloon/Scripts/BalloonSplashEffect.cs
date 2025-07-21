@@ -11,6 +11,7 @@ public class BalloonSplashEffect : MonoBehaviour
     {
         List<BalloonSplashEffect> splashes = new List<BalloonSplashEffect>(Object.FindObjectsByType<BalloonSplashEffect>(FindObjectsSortMode.None));
 
+        //Note: 各BalloonSplashEffectのGameObjectを破壊する
         foreach (var splash in splashes)
         {
             if (splash != null)
@@ -21,11 +22,20 @@ public class BalloonSplashEffect : MonoBehaviour
 
         activeSplashes.Clear();
 
+        //Note: BalloonSplashEffectが全て削除されるまで待機する
         yield return new WaitUntil(() =>
-            Object.FindFirstObjectByType<BalloonSplashEffect>() == null &&
-            splashes.TrueForAll(s => s == null)
-        );
+        {
+            //Note: シーン上にBalloonSplashEffectが1つも存在しないか
+            bool noSplashInScene = Object.FindFirstObjectByType<BalloonSplashEffect>() == null;
+
+            //Note: 取得したリスト内のすべての参照が削除済みになっているか
+            bool allSplashesDestroyed = splashes.TrueForAll(s => s == null);
+
+            //Note: 両方の条件が満たされたら完了
+            return noSplashInScene && allSplashesDestroyed;
+        });
     }
+
     public void Initialize(Sprite sprite)
     {
         var sr = GetComponent<SpriteRenderer>();

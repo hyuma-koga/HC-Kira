@@ -26,6 +26,19 @@ public class StageManager : MonoBehaviour
         }
     }
 
+    private void SpawnStage(int index)
+    {
+        if (index < 0 || index >= stagePrefabs.Length)
+        {
+            return;
+        }
+
+        currentStageInstance = Instantiate(stagePrefabs[index], stageParent);
+
+        RegisterBallForUI(currentStageInstance);
+        RegisterBalloonsInStage(currentStageInstance);
+    }
+
     public void RestartStage()
     {
         if (currentStageInstance != null)
@@ -49,19 +62,6 @@ public class StageManager : MonoBehaviour
         {
             gameOverManager.ResetGameOver();
         }
-    }
-
-    private void SpawnStage(int index)
-    {
-        if (index < 0 || index >= stagePrefabs.Length)
-        {
-            return;
-        }
-
-        currentStageInstance = Instantiate(stagePrefabs[index], stageParent);
-
-        RegisterBallForUI(currentStageInstance);
-        RegisterBalloonsInStage(currentStageInstance);
     }
 
     private void RegisterBallForUI(GameObject stageInstance)

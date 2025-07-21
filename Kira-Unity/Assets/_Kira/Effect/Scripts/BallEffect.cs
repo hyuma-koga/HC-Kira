@@ -22,12 +22,12 @@ public class BallEffect : MonoBehaviour
         {
             if (!isSpawning)
             {
-                StartCoroutine(SpawnGhosts());
+                StartCoroutine(SpawnEffects());
             }
         }
     }
 
-    private IEnumerator SpawnGhosts()
+    private IEnumerator SpawnEffects()
     {
         isSpawning = true;
 

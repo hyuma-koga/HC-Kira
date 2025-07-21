@@ -25,7 +25,7 @@ public class BalloonView : MonoBehaviour
 
         visualStrategy.ApplyVisual(sr, transform);
 
-        ApplyPhysicsShapeToAllPolygonColliders(sr.sprite);
+        UpdateCollidersFromSprite(sr.sprite);
 
         var destroyer = GetComponent<BalloonDestroyer>();
 
@@ -40,7 +40,7 @@ public class BalloonView : MonoBehaviour
         spriteIndex = index;
     }
 
-    private void ApplyPhysicsShapeToAllPolygonColliders(Sprite sprite)
+    private void UpdateCollidersFromSprite(Sprite sprite)
     {
         if (sprite == null)
         {

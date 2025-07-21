@@ -13,6 +13,11 @@ public class GameClearManager : MonoBehaviour
         StartCoroutine(PlayClearSequence());
     }
 
+    public void ResetGameClear()
+    {
+        gameClearUI.Hide();
+    }
+
     private IEnumerator PlayClearSequence()
     {
         gameUI.SetActive(false);
@@ -23,10 +28,5 @@ public class GameClearManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(delayBeforeUI);
 
         gameClearUI?.Show();
-    }
-
-    public void ResetGameClear()
-    {
-        gameClearUI.Hide();
     }
 }
