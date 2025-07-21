@@ -3,10 +3,10 @@ using System.Collections;
 
 public class GameClearManager : MonoBehaviour
 {
-    [SerializeField] private GameClearUI gameClearUI;
-    [SerializeField] private GameObject  gameUI;
+    [SerializeField] private GameClearUI            gameClearUI;
+    [SerializeField] private GameObject             gameUI;
     [SerializeField] private GameClearEffectSpawner effectSpawner;
-    [SerializeField] private float delayBeforeUI = 3f;
+    [SerializeField] private float                  delayBeforeUI = 3f;
 
     public void TriggerGameClear()
     {

@@ -13,7 +13,6 @@ public class BallPullShooter : MonoBehaviour
         rb.bodyType = RigidbodyType2D.Kinematic;
     }
 
-
     public void Shoot(Vector2 direction)
     {
         if (HasShot)

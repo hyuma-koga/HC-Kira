@@ -3,13 +3,13 @@ using System.Collections;
 
 public class BallEffect : MonoBehaviour
 {
-    [SerializeField] private GameObject ghostPrefab;     // 残像のプレハブ（SpriteRenderer付き）
-    [SerializeField] private float spawnInterval = 0.02f; // 生成間隔
-    [SerializeField] private float velocityThreshold = 0.1f; // 動いているとみなす速度
-    [SerializeField] private float ghostLifetime = 0.3f;  // 残像の寿命
-
-    private Rigidbody2D rb;
-    private bool isSpawning = false;
+    [SerializeField] private GameObject ghostPrefab;     
+    [SerializeField] private float      spawnInterval = 0.02f;
+    [SerializeField] private float      velocityThreshold = 0.1f;
+    [SerializeField] private float      ghostLifetime = 0.3f;
+    
+    private Rigidbody2D                 rb;
+    private bool                        isSpawning = false;
 
     private void Awake()
     {
@@ -40,7 +40,7 @@ public class BallEffect : MonoBehaviour
             if (sr != null && ballSR != null)
             {
                 sr.sprite = ballSR.sprite;
-                sr.color = new Color(1, 1, 1, 0.5f); // 半透明
+                sr.color = new Color(1, 1, 1, 0.5f);
                 sr.sortingLayerID = ballSR.sortingLayerID;
                 sr.sortingOrder = ballSR.sortingOrder - 1;
             }

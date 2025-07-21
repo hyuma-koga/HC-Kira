@@ -30,6 +30,7 @@ public class BalloonVisualStrategySO : ScriptableObject
             int i = Mathf.Clamp(index, 0, splashSprites.Length - 1);
             return splashSprites[i];
         }
+
         return null;
     }
 }

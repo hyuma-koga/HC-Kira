@@ -3,8 +3,9 @@ using UnityEngine;
 public class BalloonCounter : MonoBehaviour
 {
     [SerializeField] private GameClearManager gameClearManager;
-    public static BalloonCounter Instance { get; private set; }
-    private int balloonCount;
+
+    public static BalloonCounter              Instance { get; private set; }
+    private int                               balloonCount;
 
     private void Awake()
     {

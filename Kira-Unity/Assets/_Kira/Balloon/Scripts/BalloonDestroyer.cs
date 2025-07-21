@@ -2,19 +2,22 @@ using UnityEngine;
 
 public class BalloonDestroyer : MonoBehaviour
 {
-    [SerializeField] private string ballTag = "Ball";
+    [SerializeField] private string     ballTag = "Ball";
     [SerializeField] private GameObject splashPrefab;
 
     public void Initialize()
     {
-        // ‰Šú‰»ˆ—•s—v‚È‚ç‹ó‚Ì‚Ü‚Ü‚ÅOK
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag(ballTag)) return;
+        if (!other.CompareTag(ballTag))
+        {
+            return;
+        }
 
         var view = GetComponent<BalloonView>();
+
         if (view != null && splashPrefab != null)
         {
             Sprite splashSprite = view.VisualStrategy.GetSplashSprite(view.SpriteIndex);

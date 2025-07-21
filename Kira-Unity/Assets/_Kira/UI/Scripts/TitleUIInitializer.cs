@@ -4,7 +4,7 @@ public class TitleUIInitializer : MonoBehaviour
 {
     [SerializeField] private GameObject titleUI;
     [SerializeField] private GameObject stageSelectUI;
-    [SerializeField] private Transform stageParent;
+    [SerializeField] private Transform  stageParent;
 
     private void Start()
     {

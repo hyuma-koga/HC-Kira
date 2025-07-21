@@ -4,18 +4,15 @@ using UnityEngine;
 public class BalloonView : MonoBehaviour
 {
     [SerializeField] private BalloonVisualStrategySO visualStrategy;
-    [SerializeField] private int spriteIndex;
+    [SerializeField] private int                     spriteIndex;
 
-    public BalloonVisualStrategySO VisualStrategy => visualStrategy;
-
-    // 修正：正しくフィールドを返すようにする
-    public int SpriteIndex => spriteIndex;
+    public BalloonVisualStrategySO                   VisualStrategy => visualStrategy;
+    public int                                       SpriteIndex => spriteIndex;
 
     private void Start()
     {
         if (visualStrategy == null)
         {
-            Debug.LogWarning("BalloonVisualStrategySO が設定されていません。");
             return;
         }
 
@@ -23,16 +20,15 @@ public class BalloonView : MonoBehaviour
 
         if (sr == null)
         {
-            Debug.LogError("SpriteRenderer がアタッチされていません。");
             return;
         }
 
         visualStrategy.ApplyVisual(sr, transform);
 
-        // 自身と子にある PolygonCollider2D をすべて処理
         ApplyPhysicsShapeToAllPolygonColliders(sr.sprite);
 
         var destroyer = GetComponent<BalloonDestroyer>();
+
         if (destroyer != null)
         {
             destroyer.Initialize();
@@ -46,7 +42,10 @@ public class BalloonView : MonoBehaviour
 
     private void ApplyPhysicsShapeToAllPolygonColliders(Sprite sprite)
     {
-        if (sprite == null) return;
+        if (sprite == null)
+        {
+            return;
+        }
 
         PolygonCollider2D[] colliders = GetComponentsInChildren<PolygonCollider2D>();
 

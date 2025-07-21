@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class StageManager : MonoBehaviour
@@ -6,13 +7,13 @@ public class StageManager : MonoBehaviour
     [SerializeField] private GameOverManager  gameOverManager;
     [SerializeField] private GameClearManager gameClearManager;
     [SerializeField] private GameUI           gameUI;
-    [SerializeField] private GameObject stageSelectUI;
+    [SerializeField] private GameObject       stageSelectUI;
     [SerializeField] private Transform        stageParent;
     [SerializeField] private int              currentStageIndex = 0;
 
-    private GameObject currentStageInstance;
-    public static StageManager Instance { get; private set; }
-
+    public static StageManager                Instance { get; private set; }
+    private GameObject                        currentStageInstance;
+   
     private void Awake()
     {
         if (Instance == null)
@@ -22,7 +23,7 @@ public class StageManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
-            }
+        }
     }
 
     public void RestartStage()
@@ -70,6 +71,7 @@ public class StageManager : MonoBehaviour
         if (ballObj != null && gameUI != null)
         {
             var rb = ballObj.GetComponent<Rigidbody2D>();
+
             if (rb != null)
             {
                 gameUI.SetBall(rb);
@@ -112,6 +114,7 @@ public class StageManager : MonoBehaviour
         currentStageInstance = Instantiate(stagePrefabs[index], stageParent);
         RegisterBalloonsInStage(currentStageInstance);
         RegisterBallForUI(currentStageInstance);
+        gameUI?.UpdateStageNumber(index);
     }
 
     public void LoadNextStage()
@@ -133,6 +136,7 @@ public class StageManager : MonoBehaviour
             BalloonCounter.Instance.ResetCounter();
         }
 
+        gameUI?.UpdateStageNumber(currentStageIndex);
         RestartStage();
     }
 
@@ -155,5 +159,4 @@ public class StageManager : MonoBehaviour
 
         stageSelectUI.SetActive(true);
     }
-
 }

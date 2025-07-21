@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class GameClearUI : MonoBehaviour
 {
-    [SerializeField] private GameObject gameClearUI;
-    [SerializeField] private GameObject gameUI;
-    [SerializeField] private StageManager stageManager;
-    [SerializeField] private GameClearEffectSpawner effectSpawner; // Å© í«â¡
+    [SerializeField] private GameObject             gameClearUI;
+    [SerializeField] private GameObject             gameUI;
+    [SerializeField] private StageManager           stageManager;
+    [SerializeField] private GameClearEffectSpawner effectSpawner;
 
     private void Start()
     {
@@ -25,11 +25,8 @@ public class GameClearUI : MonoBehaviour
     public void NextStageButton()
     {
         Time.timeScale = 1f;
-
         gameUI.SetActive(true);
-
         StartCoroutine(BalloonSplashEffect.ClearAllSplashesCoroutine());
-
         effectSpawner?.ClearEffects();
 
         if (stageManager != null)

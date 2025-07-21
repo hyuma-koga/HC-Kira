@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class StageSelectUI : MonoBehaviour
 {
-    [SerializeField] private GameObject titleUI;
-    [SerializeField] private GameObject stageSelectUI;
-    [SerializeField] private GameObject gameUI;
+    [SerializeField] private GameObject   titleUI;
+    [SerializeField] private GameObject   stageSelectUI;
+    [SerializeField] private GameObject   gameUI;
     [SerializeField] private StageManager stageManager;
 
     public void OnStageButtonPressed(int index)

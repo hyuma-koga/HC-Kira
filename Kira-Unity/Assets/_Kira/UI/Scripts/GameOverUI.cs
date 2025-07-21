@@ -4,10 +4,10 @@ using System.Collections;
 
 public class GameOverUI : MonoBehaviour
 {
-    [SerializeField] private GameObject gameOverUI;
-    [SerializeField] private GameObject gameUI;
-    [SerializeField] private Button restartButton;
-    [SerializeField] private StageManager stageManager;
+    [SerializeField] private GameObject            gameOverUI;
+    [SerializeField] private GameObject            gameUI;
+    [SerializeField] private Button                restartButton;
+    [SerializeField] private StageManager          stageManager;
     [SerializeField] private GameOverEffectSpawner effectSpawner;
 
     private void Awake()

@@ -3,22 +3,24 @@ using System.Collections;
 
 public class GameOverManager : MonoBehaviour
 {
-    [SerializeField] private GameOverUI gameOverUI;
-    [SerializeField] private GameObject gameUI;
-    [SerializeField] private string ballTag = "Ball";
-    [SerializeField] private float bottomY = -10f;
-    [SerializeField] private float leftX = -10f;
-    [SerializeField] private float rightX = 10f;
+    [SerializeField] private GameOverUI            gameOverUI;
+    [SerializeField] private GameObject            gameUI;
+    [SerializeField] private string                ballTag = "Ball";
+    [SerializeField] private float                 bottomY = -10f;
+    [SerializeField] private float                 leftX = -10f;
+    [SerializeField] private float                 rightX = 10f;
     [SerializeField] private GameOverEffectSpawner effectSpawner;
-    [SerializeField] private float delayBeforeUI = 3f;
+    [SerializeField] private float                 delayBeforeUI = 3f;
 
-    private GameObject ball;
-    private bool isGameOver = false;
+    private GameObject                             ball;
+    private bool                                   isGameOver = false;
 
     private void Update()
     {
         if (isGameOver)
+        {
             return;
+        }
 
         if (ball == null)
         {
